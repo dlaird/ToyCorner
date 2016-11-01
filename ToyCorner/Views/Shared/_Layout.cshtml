@@ -2,38 +2,70 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="../../Content/ToyCorner.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon-32.png">
+
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+            background-image: url("~/Images/Logos/toyCornerLogo-bw.jpg");
+            background-repeat: no-repeat;
+        }
+
+        .bottom-links {
+            padding-top: 50px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        #tagline {
+            font-style: italic;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #navbarlogo {
+            border:2px;
+            border-style:solid;
+        }
+
+    </style>
+
+    <title>Toy Corner</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <h1>The Toy Corner</h1>
+                <h4 id="tagline">Gently used toys on offer to the Austin Waldorf School community.</h4>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+            <div class="navbar-nav navbar-right">
+                <img src="~/Images/Logos/toyCornerLogo.jpg" id="navbarlogo" style="width:125px;height:125px;" />
             </div>
         </div>
-    </div>
+    </nav>
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>Contact:  David and Michele Laird * 512-829-1191 * d2 @@ thelairds . net</p>
+            <p></p>
+            <p><small>&copy; 2016 - ATX Tex Mex - The Toy Corner</small></p>
         </footer>
     </div>
 

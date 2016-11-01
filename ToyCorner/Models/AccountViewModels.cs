@@ -66,7 +66,7 @@ namespace ToyCorner.Models
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "Email")]
+        [Display(Name = "Emailx")]
         public string Email { get; set; }
 
         [Required]

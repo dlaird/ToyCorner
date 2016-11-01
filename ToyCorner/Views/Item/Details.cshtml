@@ -1,0 +1,63 @@
+﻿@model ToyCorner.Models.Item
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Model.ItemName</h2>
+
+<div>
+    <h3>@Model.ItemDescription </h3>
+    <h4>Asking: @Model.ItemPrice </h4>
+    <hr />
+
+    @if (@Model.ItemImages.Count() == 1)
+    {
+        <img src="~/Images/@Model.ItemImages.ElementAt(0)" style="width:360px;height:270px;">
+    }
+    else
+    {
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner" role="listbox">
+                @{ int j = 0;}
+                @foreach (var photo in @Model.ItemImages)
+                {
+                    if (j == 0)
+                    {
+                        <div class="item active">
+                            <div row>
+                                <img src="~/Images/@photo" style="width:360px;height:270px;">
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="item">
+                            <div row>
+                                <img src="~/Images/@photo" style="width:360px;height:270px;">
+                            </div>
+                        </div>
+                    }
+                    j++;
+                }
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+                    }
+
+</div>
+<div class="bottom-links">
+    <div class="row">
+        <div class="col-xs-4 col-sm-2 col-md-3"><a href="/Type/Index">Back Home</a></div>
+        <div class="col-xs-4 col-sm-2 col-md-3"><a href="/Type/Details/@Model.TypeID">Back to @Model.TypeDescription</a></div>
+    </div>
+</div>

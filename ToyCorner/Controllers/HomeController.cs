@@ -10,6 +10,7 @@ namespace ToyCorner.Controllers
     {
         public ActionResult Index()
         {
+
             return View();
         }
 
