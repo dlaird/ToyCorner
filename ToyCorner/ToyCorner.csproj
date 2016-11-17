@@ -191,13 +191,27 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon-32.png" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\3204.jpg" />
+    <Content Include="Images\3314.jpg" />
+    <Content Include="Images\3320.jpg" />
+    <Content Include="Images\3328.jpg" />
+    <Content Include="Images\4436.jpg" />
+    <Content Include="Images\4840.jpg" />
+    <Content Include="Images\4841.jpg" />
+    <Content Include="Images\4842.jpg" />
+    <Content Include="Images\5728.jpg" />
+    <Content Include="Images\5824.jpg" />
+    <Content Include="Images\5828.jpg" />
+    <Content Include="Images\7036.jpg" />
+    <Content Include="Images\7965.jpg" />
     <Content Include="Images\Apollo11 %281%29.jpg" />
     <Content Include="Images\Apollo11 %282%29.jpg" />
     <Content Include="Images\Apollo11 %283%29.jpg" />
@@ -225,15 +239,64 @@
     <Content Include="Images\drums %284%29.jpg" />
     <Content Include="Images\drums %285%29.jpg" />
     <Content Include="Images\drums %286%29.jpg" />
+    <Content Include="Images\DSC_0053.jpg" />
+    <Content Include="Images\DSC_0055.jpg" />
+    <Content Include="Images\DSC_0056.jpg" />
+    <Content Include="Images\DSC_0057.jpg" />
+    <Content Include="Images\DSC_0058.jpg" />
+    <Content Include="Images\DSC_0059.jpg" />
+    <Content Include="Images\DSC_0062.jpg" />
+    <Content Include="Images\DSC_0064.jpg" />
+    <Content Include="Images\DSC_0066.jpg" />
+    <Content Include="Images\DSC_0067.jpg" />
+    <Content Include="Images\DSC_0068.jpg" />
+    <Content Include="Images\DSC_0069.jpg" />
+    <Content Include="Images\DSC_0070.jpg" />
+    <Content Include="Images\DSC_0071.jpg" />
+    <Content Include="Images\DSC_0072.jpg" />
+    <Content Include="Images\DSC_0073.jpg" />
+    <Content Include="Images\DSC_0074.jpg" />
+    <Content Include="Images\DSC_0075.jpg" />
+    <Content Include="Images\DSC_0076.jpg" />
+    <Content Include="Images\DSC_0077.jpg" />
+    <Content Include="Images\DSC_0182.jpg" />
+    <Content Include="Images\DSC_0183.jpg" />
+    <Content Include="Images\DSC_0184.jpg" />
+    <Content Include="Images\DSC_0185.jpg" />
+    <Content Include="Images\DSC_0186.jpg" />
+    <Content Include="Images\DSC_0187.jpg" />
+    <Content Include="Images\DSC_0188.jpg" />
+    <Content Include="Images\DSC_0188b.jpg" />
+    <Content Include="Images\DSC_0188c.jpg" />
+    <Content Include="Images\DSC_0189.jpg" />
+    <Content Include="Images\DSC_0190.jpg" />
+    <Content Include="Images\DSC_0736.jpg" />
+    <Content Include="Images\DSC_0738.jpg" />
+    <Content Include="Images\DSC_0740.jpg" />
+    <Content Include="Images\DSC_0921.jpg" />
+    <Content Include="Images\DSC_0926.jpg" />
+    <Content Include="Images\DSC_0929.jpg" />
+    <Content Include="Images\DSC_0930.jpg" />
+    <Content Include="Images\DSC_0931.jpg" />
+    <Content Include="Images\DSC_0934.jpg" />
+    <Content Include="Images\DSC_1183.jpg" />
+    <Content Include="Images\DSC_1184.jpg" />
+    <Content Include="Images\DSC_1185.jpg" />
+    <Content Include="Images\DSC_1186.jpg" />
+    <Content Include="Images\DSC_1187.jpg" />
+    <Content Include="Images\DSC_1188.jpg" />
     <Content Include="Images\elastic_power %281%29.jpg" />
     <Content Include="Images\elastic_power %282%29.jpg" />
     <Content Include="Images\elastic_power %283%29.jpg" />
     <Content Include="Images\elastic_power %284%29.jpg" />
+    <Content Include="Images\for_5784.jpg" />
+    <Content Include="Images\for_5794.jpg" />
     <Content Include="Images\helmet %281%29.jpg" />
     <Content Include="Images\helmet %282%29.jpg" />
     <Content Include="Images\helmet %283%29.jpg" />
     <Content Include="Images\helmet %284%29.jpg" />
     <Content Include="Images\helmet %285%29.jpg" />
+    <Content Include="Images\knight_carrying_case.jpg" />
     <Content Include="Images\light_saber %281%29.jpg" />
     <Content Include="Images\light_saber %282%29.jpg" />
     <Content Include="Images\light_saber %283%29.jpg" />
@@ -251,6 +314,7 @@
     <Content Include="Images\Papo_Mammoth.jpg" />
     <Content Include="Images\Papo_Mammoth2.jpg" />
     <Content Include="Images\Papo_T-Rex.jpg" />
+    <Content Include="Images\playmobil-logo.jpg" />
     <Content Include="Images\rock_polisher %281%29.jpg" />
     <Content Include="Images\rock_polisher %282%29.jpg" />
     <Content Include="Images\security_safe %281%29.jpg" />
@@ -284,9 +348,18 @@
     <Content Include="Images\unicycle %282%29.jpg" />
     <Content Include="Images\unicycle %283%29.jpg" />
     <Content Include="Images\unicycle %284%29.jpg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\Web Deploy to Host4ASP.NET.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -340,11 +413,11 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

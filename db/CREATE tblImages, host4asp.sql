@@ -10,7 +10,7 @@ GO
 
 CREATE TABLE [tc].[tblImages](
 	[ImageID] [int] IDENTITY(1,1) NOT NULL,
-	[ItemName] [nvarchar](50) NOT NULL,
+	[ItemName] [nvarchar](100) NOT NULL,
 	[ImageFileName] [nvarchar](50) NOT NULL,
 	[ImageFilePath] [nvarchar](400) NULL,
  CONSTRAINT [PK_tblImages] PRIMARY KEY CLUSTERED 

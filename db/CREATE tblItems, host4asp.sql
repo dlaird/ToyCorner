@@ -11,8 +11,8 @@ GO
 CREATE TABLE [tc].[tblItems](
 	[ItemID] [int] IDENTITY(1,1) NOT NULL,
 	[TypeName] [nvarchar](30) NOT NULL,
-	[ItemName] [nvarchar](50) NOT NULL,
-	[ItemDescription] [nvarchar](400) NULL,
+	[ItemName] [nvarchar](100) NOT NULL,
+	[ItemDescription] [nvarchar](600) NULL,
 	[ItemPrice] [real] NULL,
 	[IsAvailable] [int] NULL,
  CONSTRAINT [PK_tblItems] PRIMARY KEY CLUSTERED 
